@@ -1,0 +1,260 @@
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.new-sidebar::-webkit-scrollbar {
+    width: 20px;
+}
+.new-sidebar::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.new-sidebar::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+.new-sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: #794EDA;
+}
+
+
+
+
+.new-sidebar{
+    position: fixed;
+    right: -600px;
+    top: 0;
+    transition: .5s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    background-color: #f3f3f3;
+    color: #000;
+    width: 550px;
+    max-width: 95%;
+    height: 100vh;
+    overflow: auto;
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 3px 0px, rgb(0 0 0 / 10%) 0px 2px 10px 0px;
+}
+
+.sidebar-opened{
+    right: 0 !important;
+}
+
+.new-sidebar p{
+    margin-bottom: 0;
+}
+.new-sidebar .greats{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #c4c4c4;
+}
+.new-sidebar .greats p{
+    font-size: 25px;
+    font-weight: 500;
+}
+.new-sidebar .greats i{
+    font-size: 25px;
+    color: red;
+}
+.new-sidebar .task-remain{
+    position: relative;
+    background-color: #5e17eb;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+.new-sidebar .task-remain .task{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.new-sidebar .task-remain img{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    max-width: 190px;
+}
+.new-sidebar .single-task{
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 3px 0px, rgb(0 0 0 / 10%) 0px 2px 10px 0px;
+}
+.new-sidebar .single-task .t-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.new-sidebar .single-task .t-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.new-sidebar .single-task .t-title p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.new-sidebar .single-task .t-title span{
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background-color: #5af618;
+    border-radius: 50%;
+}
+.new-sidebar .single-task .t-date p{
+    font-size: 13px;
+    color: #737373;
+}
+.new-sidebar .single-task .t-date .fa-trash-alt{
+    cursor: pointer;
+    color: red;
+}
+
+.new-sidebar .single-task::before{
+    content: '';
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+}
+.new-sidebar .single-task::before{
+    content: '';
+    background-color: #96b5f6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+}
+.new-sidebar .sidebar-challanges{
+    position: relative;
+    border: 3px solid #5e17eb;
+    padding: 13px 10px 10px 10px;
+    margin-top: 40px;
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 3px 0px, rgb(0 0 0 / 10%) 0px 2px 10px 0px;
+}
+.new-sidebar .sidebar-challanges .challanges-title{
+    position: absolute;
+    top: -14px;
+    left: 20px;
+    background-color: #f3f3f3;
+    padding: 0 5px;
+    color: #5e17eb;
+    font-weight: 500;
+}
+.new-sidebar .sidebar-challanges .challanges-text{
+    font-size: 14px;
+    text-align: justify;
+}
+
+
+.new-sidebar-handle{
+    position: fixed;
+    right: 0px;
+    top: 20%;
+    cursor: pointer;
+    background-color: #fff;
+}
+.new-sidebar-handle span{
+    display: block;
+    background-color: #000;
+    height: 4px;
+    width: 30px;
+}
+.new-sidebar-handle span:nth-child(2){
+    margin: 8px 0;
+}
+
+
+
+.sidebar-course-offer{
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 3px 0px, rgb(0 0 0 / 10%) 0px 2px 10px 0px;
+}
+.sidebar-course-offer .header{
+    background-color: #4bc3aa;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.sidebar-course-offer .header .left img{
+    max-width: 170px;
+    text-align: center;
+    margin-right: 10px;
+}
+.sidebar-course-offer .header .right p{
+    font-weight: 600;
+    color: #fff;
+    font-size: 18px;
+}
+.sidebar-course-offer .header .right p:nth-child(2){
+
+    font-size: 16px;
+}
+.sidebar-course-offer .footer .title{
+    font-size: 18px;
+    font-weight: 500;
+}
+.sidebar-course-offer .footer .des{
+    font-size: 15px;
+    margin: 10px 0;
+}
+.sidebar-course-offer .footer{
+    background-color: #fff;
+    padding: 10px 20px;
+}
+.sidebar-course-offer .footer .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar-course-offer .footer .bottom button{
+    padding: 0;
+    font-weight: 600;
+    color: #5e17eb;
+}
+.sidebar-course-offer .footer .bottom #sidebar-timer{
+    font-weight: 500;
+    color: red;
+    font-size: 14px;
+}
+
+.new-sidebar .task-tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.new-sidebar .task-tab p{
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 2px 10px;
+    cursor: pointer;
+}
+.new-sidebar .task-tab .active{
+    font-weight: 600;
+    border-bottom: 4px solid #5e17eb;
+    color: #5e17eb;
+}
