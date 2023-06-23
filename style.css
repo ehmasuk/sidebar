@@ -2,6 +2,9 @@ body {
     overflow-x: hidden;
 }
 
+
+
+
 .new-sidebar::-webkit-scrollbar {
     width: 20px;
 }
@@ -43,6 +46,7 @@ body {
     overflow: auto;
     box-shadow:#00122e29 0px 8px 36px 0px;
     padding-top: 0;
+    z-index: 99;
 }
 
 .sidebar-opened {
@@ -128,7 +132,9 @@ body {
 }
 .new-sidebar .single-task::before {
     content: "";
-    background-color: #96b5f6;
+    /* background-color: #96b5f6; */
+    background: linear-gradient(135deg, rgb(42, 39, 218), rgb(0, 204, 255));
+
     position: absolute;
     left: 0;
     top: 0;
@@ -158,20 +164,24 @@ body {
 
 .new-sidebar-handle {
     position: fixed;
-    right: 0px;
-    top: 20%;
+    right: -6px;
+    top: 30%;
+    color: white;
+    background: linear-gradient(135deg, rgb(42, 39, 218), rgb(0, 204, 255));
+    padding: 10px 5px 10px 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 15px;
     cursor: pointer;
-    background-color: #fff;
+    transition: all 0.30s ease-in-out;
+    z-index: 9;
 }
-.new-sidebar-handle span {
-    display: block;
-    background-color: #000;
-    height: 2px;
-    width: 20px;
+.new-sidebar-handle:hover{
+    right: 0px;
+    background: linear-gradient(135deg, rgb(0, 204, 255),rgb(42, 39, 218));
+    color: #fff!important;
 }
-.new-sidebar-handle span:nth-child(2) {
-    margin: 8px 0;
-}
+
 
 .sidebar-course-offer {
     margin-top: 20px;
@@ -201,7 +211,7 @@ body {
     font-size: 16px;
 }
 .sidebar-course-offer .footer .title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
 }
 .sidebar-course-offer .footer .des {
@@ -227,6 +237,131 @@ body {
     color: red;
     font-size: 14px;
 }
+
+
+
+
+/* sidebar post */
+.sidebar-post-offer {
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    box-shadow: #00000000 0px 0px 3px 0px, rgba(0, 0, 0, 0.2) 0px 2px 10px 0px;
+    position: relative;
+}
+.sidebar-post-offer .header img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 120px;
+
+}
+.sidebar-post-offer .footer .title {
+    font-size: 16px;
+    font-weight: 500;
+}
+.sidebar-post-offer .footer .des {
+    font-size: 15px;
+    margin: 10px 0;
+}
+.sidebar-post-offer .footer {
+    background-color: #fff;
+    padding: 10px 20px;
+}
+.sidebar-post-offer .footer .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar-post-offer .footer .bottom button {
+    padding: 0;
+    font-weight: 600;
+    color: #5e17eb;
+}
+.sidebar-post-offer .footer .bottom #sidebar-timer {
+    font-weight: 500;
+    color: red;
+    font-size: 14px;
+}
+/* sidebar events */
+.sidebar-event-offer {
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    box-shadow: #00000000 0px 0px 3px 0px, rgba(0, 0, 0, 0.2) 0px 2px 10px 0px;
+    position: relative;
+}
+.sidebar-event-offer .header img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 120px;
+
+}
+.sidebar-event-offer .footer .title {
+    font-size: 16px;
+    font-weight: 500;
+}
+.sidebar-event-offer .footer .des {
+    font-size: 15px;
+    margin: 10px 0;
+}
+.sidebar-event-offer .footer {
+    background-color: #fff;
+    padding: 10px 20px;
+}
+.sidebar-event-offer .footer .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar-event-offer .footer .bottom button {
+    padding: 0;
+    font-weight: 600;
+    color: #5e17eb;
+}
+.sidebar-event-offer .footer .bottom #sidebar-timer {
+    font-weight: 500;
+    color: red;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.sidebar-event-offer .fa-times,
+.sidebar-post-offer .fa-times{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: red;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
+
+
+.sidebar-strap{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 5px 10px;
+    background: linear-gradient(135deg, rgb(42, 39, 218), rgb(0, 204, 255));
+    font-size: 10px;
+    color: #fff;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+
+
 
 .new-sidebar .task-tab {
     display: flex;
@@ -303,5 +438,5 @@ body {
     top: 5px;
     cursor: pointer;
     color: red;
-
 }
+

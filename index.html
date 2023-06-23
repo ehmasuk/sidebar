@@ -18,9 +18,7 @@
 
         <!-- handle -->
         <div class="new-sidebar-handle">
-            <span></span>
-            <span></span>
-            <span></span>
+            <i class="fa fa-bars"></i>
         </div>
         <div class="new-sidebar">
             <div class="newsidebar-header">
@@ -62,8 +60,47 @@
                     </p>
                 </div>
 
-                <!-- course -->
-                <!-- <div class="sidebar-course-offer">
+
+
+
+                
+                <!-- post  -->
+                <div class="sidebar-post-offer">
+                    <i class="fas fa-times"></i>
+                    <span class="sidebar-strap">New post</span>
+                    <div class="header">
+                        <img src="https://escuela-ray-bolivar-sosa.com/test/uploads/1685984662.gafas_.jpg" alt="" class="home-recent-img">
+                    </div>
+                    <div class="footer">
+                        <p class="title">Descubre el fascinante mundo del folletín: Pasión, intriga y romance en cada página</p>
+                        <p class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, quibusdam...</p>
+                        <div class="bottom">
+                            <p></p>
+                            <button class="btn mt-2">Read now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- events  -->
+                <div class="sidebar-event-offer">
+                    <i class="fas fa-times"></i>
+                    <span class="sidebar-strap">New event</span>
+                    <div class="header">
+                        <img src="https://lmszoom.s3.eu-west-3.amazonaws.com/event_image/1685979193.mujerlee2.jpg" alt="" class="home-recent-img">
+                    </div>
+                    <div class="footer">
+                        <p class="title">Ladrones de tiempo, ¿qué necesitas para escribir tu novela?</p>
+                        <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, unde!...</p>
+                        <div class="bottom">
+                            <p id="sidebar-timer"></p>
+                            <button class="btn">Join now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- offer course -->
+                <div class="sidebar-course-offer">
                     <div class="header">
                         <div class="left">
                             <img src="img/Today.png" alt="" />
@@ -81,16 +118,18 @@
                             <button class="btn">Claim now</button>
                         </div>
                     </div>
-                </div> -->
+                </div>
+
+
 
                 <!-- challanges -->
-                <!-- <div class="sidebar-challanges">
+                <div class="sidebar-challanges">
                     <p class="challanges-title">
                         <i class="fas fa-bullseye"></i>
                         Today's Challange
                     </p>
                     <p class="challanges-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab omnis aperiam eum perspiciatis doloremque nobis fuga vero dolorum quidem in.</p>
-                </div> -->
+                </div>
 
                 <!-- tasks -->
                 <div>
@@ -103,9 +142,8 @@
                     </div>
                     <!-- task tab -->
                     <div class="task-tab">
-                        <p class="active">All</p>
-                        <p>Latest tasks</p>
-                        <p>To dos</p>
+                        <p class="active">Main Course</p>
+                        <p>Complementary Course</p>
                     </div>
                     <!-- single tasks -->
                     <div>
@@ -119,9 +157,16 @@
                                 <button class="btn new-sidebar-claim-btn btn-sm">Start</button>
                             </div>
                         </div>
+                    </div>
+                    <!-- task tab -->
+                    <div class="task-tab">
+                        <p class="active">Tasks</p>
+                    </div>
+                    <!-- single tasks -->
+                    <div>
                         <div class="single-task">
                             <div class="t-title">
-                                <p>Buy a course now</p>
+                                <p>task 1</p>
                                 <i class="far fa-trash-alt"></i>
                             </div>
                             <div class="t-date">
@@ -133,6 +178,8 @@
                 </div>
             </div>
         </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
         <script>
             const newSidebar = document.querySelector(".new-sidebar");
@@ -174,6 +221,14 @@
                     document.getElementById("sidebar-timer").innerHTML = "EXPIRED";
                 }
             }, 1000);
+
+
+
+
+
+
+
+
         </script>
     </body>
 </html>
